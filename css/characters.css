@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.5fr;
+  grid-template-columns: 1fr;
+  width: 100vw;
+}
+
+.firstSection {
+  grid-row: 1;
+}
+
+.middleSection {
+  grid-row: 2;
+}
+
+.lastSection {
+  grid-row: 3;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.choosing-character-box {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 10% 25% 10% 25% 10%;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 2px 2px 4px #7d0633;
+}
+
+h3 {
+  grid-column: 3;
+  text-align: center;
+}
+
+.female-box {
+  grid-column: 2;
+  text-align: center;
+}
+
+.female-hero,
+.male-hero {
+  border-radius: 10px;
+  align-self: center;
+  transition: all 0.5s;
+}
+.female-hero:hover {
+  box-shadow: 1px 1px 5px 3px #7d0633;
+  cursor: pointer;
+}
+.male-hero:hover {
+  box-shadow: 1px 1px 5px 3px #0f3460;
+  cursor: pointer;
+}
+
+.female-power-table p {
+  text-align: center;
+}
+
+.male-box {
+  grid-column: 4;
+  text-align: center;
+}
+.male-power-table p {
+  text-align: center;
+}
+
+.startBtn {
+  background-color: #679b9b;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 40%;
+  height: 20%;
+  transition: all 0.2s;
+}
+
+.startBtn:hover {
+  margin-top: 3px;
+  margin-right: 3px;
+  border-top: 2px groove black;
+  border-right: 2px groove black;
+  cursor: pointer;
+}
